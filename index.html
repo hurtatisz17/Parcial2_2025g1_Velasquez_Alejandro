@@ -1,48 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CoderHub.run</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
 
-    <header>
-            <div class="row d-flex justify-content-center align-items-center">
-                <img src="img/BANNER.png" alt="banner"> 
-            </div>
+    <header class="position-relative">
+
+      <div class="row">
+        <img src="img/BANNER.png" alt="banner" class="img-fluid w-100"> 
+      </div>
+
+      <div class="position-absolute end-0 bottom-0 p-3 ">
+        <a href="#formulario" class="btn btn-primary btn-lg d-none d-sm-inline-block btn-container">CONTÁCTANOS</a>
+        <a href="#formulario" class="btn btn-primary btn-sm d-inline-block d-sm-none btn-container">📩</a>
+      </div>
+
     </header>
 
 
 
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg fondo_azul">
+
   <div class="container-fluid">
-    <a class="nav-link text_verde" href="#";>CoderHub.run</a>
+    <a class="nav-link text_verde efecto-nav" href="index.html";>CoderHub.run</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link text_verde" aria-current="page" href="#">Nosotros</a>
+      <ul class="navbar-nav mx-auto ">
+        <li class="nav-item ">
+          <a class="nav-link text_verde efecto-nav" aria-current="page" href="#nosotros">Nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text_verde" href="#">Misión</a>
+          <a class="nav-link text_verde efecto-nav" href="equipo.html">Equipo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text_verde" href="#">Visión</a>
+          <a class="nav-link text_verde efecto-nav" href="servicios.html">Servicios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text_verde" href="#">Equipo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text_verde" href="#">Servicios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text_verde" href="#">Portafolio</a>
+          <a class="nav-link text_verde efecto-nav" href="portafolio.html">Portafolio</a>
         </li>
       </ul>
     </div>
@@ -51,21 +55,129 @@
 
 <main>
 
+<section id="nosotros" class="container-fluid fondo_azul p-2">
 
+
+    <article>
+      <h3 class="titulo_verde">NOSOTROS</h3>
+      <p class="text_blanco">Somos una empresa entusiasta y creativa dedicada al desarrollo de software. Nuestro propósito es transformar la forma en que se crean soluciones digitales, combinando innovación, talento y pasión. Nos caracterizamos por trabajar de la mano con nuestros clientes, ofreciendo proyectos que no solo resuelven necesidades, sino que inspiran nuevas posibilidades en el mundo tecnológico.</p>
+      <br></br>
+      <h3 class="titulo_verde">VISIÓN</h3>
+      <p class="text_blanco">Ser reconocidos como una empresa referente en el desarrollo de software innovador, capaz de impulsar la transformación digital en empresas y personas, marcando la diferencia por nuestra creatividad, calidad y compromiso.</p>
+      <br></br>
+      <h3 class="titulo_verde">MISIÓN</h3>
+      <p class="text_blanco">Diseñar y desarrollar soluciones tecnológicas modernas, funcionales y a la medida, que generen valor real a nuestros clientes, fomentando la innovación constante y el crecimiento conjunto.</p>
+      <br></br>
+      <h3 class="titulo_verde">VALORES</h3>
+      <ul class="lista text_blanco">
+        <li>✅ <span>Creatividad:</span> damos vida a ideas únicas que impulsan la innovación.</li>
+        <li>✅ <span>Compromiso:</span> trabajamos con responsabilidad y dedicación en cada proyecto.</li>
+        <li>✅ <span>Colaboración:</span> creemos en el poder del trabajo en equipo y la comunicación abierta.</li>
+        <li>✅ <span>Calidad:</span> buscamos la excelencia en cada producto que entregamos.</li>
+        <li>✅ <span>Pasión:</span> ponemos energía y entusiasmo en todo lo que hacemos.</li>
+      </ul>
+    </article>
+</section>
+
+
+
+<div id="formulario" class=" container-fluid fondo_azul titulo_verde px-5">
+
+  <div class="row g-0">
+
+    <div class="col-12 col-md-5 my-4 px-1">
+      <div class="card-header text_verde">
+        <h3 class="mb-2">Formulario de Contacto</h3>
+      </div>
+      <div class="card-body">
+
+        <form id="contactForm" novalidate>
+
+          <div class="mb-3 ms-3">
+            <label for="nombre" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" id="nombre" required>
+            <div class="invalid-feedback">Por favor ingresa tu nombre completo.</div>
+          </div>
+
+          <div class="mb-3 ms-3">
+            <label for="Numero" class="form-label">Numero celular de contacto</label>
+            <input type="text" class="form-control" id="mumero" required>
+            <div class="invalid-feedback">Ingresa un numero de contacto.</div>
+          </div>
+
+          <div class="mb-3 ms-3">
+            <label for="correo" class="form-label">Correo electronico</label>
+            <input type="email" class="form-control" id="email" required>
+            <div class="invalid-feedback">Ingresa un correo electronico.</div>
+          </div>
+
+          <div class="mb-3 ms-3">
+            <label for="mensaje" class="form-label">Solicitud / Pregunta</label>
+            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+            <div class="invalid-feedback">Escribe tu Solicitud / Pregunta.</div>
+          </div>
+
+          <button type="submit" class="btn btn-success mn-3 ms-3 btn-container">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-10 col-md-5 m-4">
+  <div class="card h-90">
+    <div class="card-header titulo_verde">
+      <h3 class="mb-2">Ubicación</h3>
+    </div>
+    <div class="card-body">
+      <div class="ratio ratio-4x3">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31905.80676985433!2d-75.60384199999997!3d1.6188690000000072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e244e1a71ba142f%3A0x408dc3d21376d444!2sFlorencia%2C%20Caquet%C3%A1!5e0!3m2!1ses!2sco!4v1758010880994!5m2!1ses!2sco"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>      
+  </div>
+  </div>
+      
+</div>
 
 
 
 </main>
 
+<footer class="text-center py-4 bg-dark">
+  <div class="container text_blanco">
+    <div class="row">
+      <div class="col">
+        <p class="text_verde">Derechos reservados © 2025</p>
+        <p class="text_verde">Síguenos en nuestras redes sociales:</p>
+        <a class="a-redes" href="#">
+          <i class="fab fa-facebook fa"></i>
+        </a>
+        <a class="a-redes" href="#">
+          <i class="fab fa-twitter fa"></i>
+        </a>
+        <a class="a-redes" href="#">
+          <i class="fab fa-instagram fa"></i>
+        </a>
+        <a class="a-redes" href="#">
+          <i class="fab fa-linkedin fa"></i>
+        </a>
+        
+      
+
+      </div>
+    </div>
+  </div>
 
 
 
-
-
-
-
-
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

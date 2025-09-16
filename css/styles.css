@@ -8,13 +8,10 @@
 
 header{
     background-image: linear-gradient(to right, rgb(3, 1, 70), rgb(2, 54, 2));
-
-
-
 }
 
 img{
-width: 100%;   
+  width: 100%;   
   height: auto;  
   display: block; 
 }
@@ -25,14 +22,25 @@ width: 100%;
     display: block;
 }
 
-.text_center{
+.text_blanco{
     font-family: serif;
-    text-align: center;
+    font-size: 1.5rem;
     color: white;
 }
 
-nav{
+.btn-container {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.btn-container:hover {
+  transform: scale(1.10) translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.fondo_azul{
     background-color: rgb(3, 3, 82);
+    border-top: solid rgb(6, 1, 56) 1px;
 }
 .text_verde{
     font-family: serif;
@@ -41,6 +49,78 @@ nav{
     color: rgb(0, 255, 38);
 }
 
+.titulo_verde{
+    color: rgb(0, 255, 38); 
+    font-family: serif; 
+    font-weight: bold;
+}
+
 .navbar-toggler-icon {
   filter: brightness(0) invert(1);
 }
+
+
+#contactForm .form-control {
+  margin-left: 20px;
+  width: 250px;
+  border-width: 2px; 
+  border-color:rgb(0, 255, 38); 
+  box-shadow: none; 
+}
+
+#contactForm .form-control:focus {
+  border-width: 2px;
+  border-color: rgb(3, 3, 82); 
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25); 
+}
+
+p{
+    padding-right: 15px;
+}
+
+.lista{
+   list-style: none;
+}
+
+span{
+    font-weight: bold;
+}
+
+label{
+    font-size: 1.5rem;
+}
+
+.carousel-item {
+  transition: opacity 1.5s ease-in-out;
+}
+
+.efecto-transform {
+  transition: transform 0.3s ease;
+}
+
+.efecto-transform:hover {
+  transform: scale(1.05);
+}
+
+.efecto-transform-img {
+  transition: transform 0.3s ease;
+}
+
+.efecto-transform-img:hover {
+  transform: scale(1.12);
+}
+
+.efecto-nav{
+  transition: transform 0.3s ease;
+}
+.efecto-nav:hover{
+  color: white;
+}
+.a-redes{
+  text-decoration: none;
+  color: rgb(0, 255, 38);
+}
+
+
+
